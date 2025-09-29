@@ -13,7 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.praktikum2.ui.theme.Praktikum2Theme
+import com.example.praktikum2.ui.theme.ShoppingListTheme
 
 @Composable
 fun ShoppingList(items: List<String>) {
@@ -53,7 +53,7 @@ fun ShoppingListItem(item: String) {
 @Preview(showBackground = true)
 @Composable
 fun ShoppingListPreview() {
-    Praktikum2Theme {
+    ShoppingListTheme {
         ShoppingList(items = listOf("Milk", "Bread", "Eggs", "Apples"))
     }
 }

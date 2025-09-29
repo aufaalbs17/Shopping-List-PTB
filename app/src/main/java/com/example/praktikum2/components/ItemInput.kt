@@ -16,7 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.praktikum2.ui.theme.Praktikum2Theme
+import com.example.praktikum2.ui.theme.ShoppingListTheme
 
 @Composable
 fun ItemInput(text: String, onTextChange: (String) -> Unit, onAddItem: () -> Unit) {
@@ -43,7 +43,7 @@ fun ItemInput(text: String, onTextChange: (String) -> Unit, onAddItem: () -> Uni
 @Preview(showBackground = true)
 @Composable
 fun ItemInputPreview() {
-    Praktikum2Theme {
+    ShoppingListTheme {
         ItemInput(text = "Milk", onTextChange = {}, onAddItem = {})
     }
 }

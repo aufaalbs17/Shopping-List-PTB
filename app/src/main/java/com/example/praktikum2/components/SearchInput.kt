@@ -13,7 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.praktikum2.R
-import com.example.praktikum2.ui.theme.Praktikum2Theme
+import com.example.praktikum2.ui.theme.ShoppingListTheme
 
 @Composable
 fun SearchInput(query: String, onQueryChange: (String) -> Unit) {
@@ -32,7 +32,7 @@ fun SearchInput(query: String, onQueryChange: (String) -> Unit) {
 @Preview(showBackground = true)
 @Composable
 fun SearchInputPreview() {
-    Praktikum2Theme {
+    ShoppingListTheme {
         SearchInput(query = "Bananas", onQueryChange = {})
     }
 }
